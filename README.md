@@ -1,6 +1,6 @@
 # meta-api-endpoints
 
-Endpoint library for META API services.
+Shared libraries for META API.
 
 ## Warning
 Unstable development version.

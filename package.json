@@ -1,7 +1,7 @@
 {
-  "name": "meta-api-endpoints",
+  "name": "meta-api-shared",
   "version": "1.0.0",
-  "description": "Endpoint library for META API services.",
+  "description": "Shared libraries for META API.",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/jshint --exclude-path ./.gitignore --reporter=./node_modules/jshint-full-path/index.js .",
