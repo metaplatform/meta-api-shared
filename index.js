@@ -11,6 +11,7 @@ module.exports = {
 	Client: 	require("./lib/client.js"),
 	Endpoints: 	require("./lib/endpoints/index.js"),
 	Utils: 		require("./lib/utils.js"),
+	Validator: 	require("./lib/validator.js"),
 
 	//Enums
 	protocol: 	require("./lib/protocol.js")
