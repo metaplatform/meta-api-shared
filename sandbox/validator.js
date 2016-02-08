@@ -111,7 +111,20 @@ var val = new Validator.Validator({
 		required: false,
 		pattern: "local\:\/\/.*",
 		empty: false
-	}, client)
+	}, client),
+
+	"ipv4": Validator.ipv4({
+		label: "IPv4 field",
+		required: false,
+		pattern: '^10\.*'
+	}),
+
+	"ipv4mask": Validator.ipv4mask({
+		label: "IPv4 mask field",
+		required: false,
+		minBits: 1,
+		maxBits: 27
+	})
 
 });
 
@@ -138,7 +151,9 @@ val.validate({
 	dataBase: new Buffer("Hello World!").toString('base64'),
 	dataJson: '{ "hello": "world" }',
 	link: "local://test",
-	multilink: [ "local://test", "local://" ]
+	multilink: [ "local://test", "local://" ],
+	ipv4: "10.0.0.255",
+	ipv4mask: "255.255.255.224"
 
 }).then(function(res){
 	console.log("OK", res);
