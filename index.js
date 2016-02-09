@@ -10,6 +10,7 @@ module.exports = {
 	//Libraries
 	Client: 	require("./lib/client.js"),
 	Endpoints: 	require("./lib/endpoints/index.js"),
+	Types: 		require("./lib/types.js"),
 	Utils: 		require("./lib/utils.js"),
 	Validator: 	require("./lib/validator.js"),
 
