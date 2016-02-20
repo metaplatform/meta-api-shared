@@ -15,6 +15,7 @@ module.exports = {
 	Validator: 	require("./lib/validator.js"),
 
 	//Enums
-	protocol: 	require("./lib/protocol.js")
+	protocol: 	require("./lib/protocol.js"),
+	wsHandler: 	require("./lib/wsHandler.js")
 
 };
